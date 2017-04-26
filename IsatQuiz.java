@@ -6,10 +6,10 @@ public class IsatQuiz{
   public static void main(String[] args) {
 
        //These are the questions we will ask the user.
-       String FINAL QUESTION_1 = "How old are you?";
-       String FINAL QUESTION_2 = "What is your favorite car?";
-       String FINAL QUESTION_3 = "What is your favorite color?";
-       String FINAL QUESTION_4 = "What year were you born?";
+       final String QUESTION_1 = "How old are you?";
+       final String QUESTION_2 = "What is your favorite car?";
+       final String QUESTION_3 = "What is your favorite color?";
+       final String QUESTION_4 = "What year were you born?";
 
        //declare a variable as age to be used in quiz
         int age = 0;
@@ -29,9 +29,10 @@ public class IsatQuiz{
         if (age < 20){
           System.out.println("You are a teenager.");
           int tillOfAge = 20 - age;
-          System.out.println("You have " + tillOfAge + "more years until you are an adult.");
+          System.out.println("You have " + tillOfAge + " more years until you are an adult.");
         }
-        else{
+        else
+        {
           System.out.println("You are an adult.");
         }
 
@@ -50,10 +51,13 @@ public class IsatQuiz{
    }
 
    //Subprogram to determine the age gap.
-   public static String millenial (int year){
-       if year < 2000{
+   public static void millenial (int year){
+       if (year < 2000)
+       {
          System.out.println("You are a millenial.");
-       } else{
+       } 
+       else
+       {
          System.out.println("You are old.");
        }
 
